@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CollegeFeeForm</class>
+ <widget class="QMainWindow" name="CollegeFeeForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>500</width><height>350</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>College Enrollment Fee Calculator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <layout class="QGridLayout" name="formLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_first_name">
+        <property name="text"><string>First Name:</string></property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="first_name_input"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_last_name">
+        <property name="text"><string>Last Name:</string></property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="last_name_input"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_age">
+        <property name="text"><string>Age:</string></property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="age_input"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_program">
+        <property name="text"><string>Program:</string></property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="program_box">
+        <item><property name="text"><string>Computer Science</string></property></item>
+        <item><property name="text"><string>Business Administration</string></property></item>
+        <item><property name="text"><string>Arts and Humanities</string></property></item>
+        <item><property name="text"><string>Sciences</string></property></item>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_residency">
+        <property name="text"><string>Residency:</string></property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="in_state_checkbox">
+        <property name="text"><string>In-State</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout" name="feeLayout">
+      <item>
+       <widget class="QLabel" name="label_fee">
+        <property name="text"><string>Total Fee:</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="fee_display">
+        <property name="readOnly"><bool>true</bool></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="calculate_button">
+        <property name="text"><string>Calculate Fee</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="clear_button">
+        <property name="text"><string>Clear Form</string></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="exit_button">
+        <property name="text"><string>Exit</string></property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowTitle">
+   <string>Home Purchase Application</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>600</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Home Purchase</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="nameLabel">
+          <property name="text">
+           <string>Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="nameInput"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="ageLabel">
+          <property name="text">
+           <string>Age:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="ageInput"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="houseTypeLabel">
+          <property name="text">
+           <string>House Type:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QComboBox" name="houseTypeCombo">
+          <item><property name="text"><string>Apartment</string></property></item>
+          <item><property name="text"><string>Townhouse</string></property></item>
+          <item><property name="text"><string>Single-Family Home</string></property></item>
+          <item><property name="text"><string>Luxury Villa</string></property></item>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="2">
+         <widget class="QGroupBox" name="modelGroupBox">
+          <property name="title">
+           <string>Model Type</string>
+          </property>
+          <layout class="QVBoxLayout" name="modelLayout">
+           <item><widget class="QRadioButton" name="standardRadio"><property name="text"><string>Standard</string></property></widget></item>
+           <item><widget class="QRadioButton" name="smartRadio"><property name="text"><string>Smart</string></property></widget></item>
+           <item><widget class="QRadioButton" name="luxuryRadio"><property name="text"><string>Luxury</string></property></widget></item>
+          </layout>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="downPaymentLabel">
+          <property name="text">
+           <string>Down Payment:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="downPaymentInput"/>
+        </item>
+        <item row="5" column="0" colspan="2">
+         <widget class="QLabel" name="paymentsLabel">
+          <property name="text">
+           <string>Monthly Payments:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="2">
+         <widget class="QListWidget" name="paymentsList"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="buttonLayout">
+        <item><widget class="QPushButton" name="purchaseButton"><property name="text"><string>Purchase</string></property></widget></item>
+        <item><widget class="QPushButton" name="showPaymentsButton"><property name="text"><string>Show Payments</string></property></widget></item>
+        <item><widget class="QPushButton" name="clearButton"><property name="text"><string>Clear</string></property></widget></item>
+        <item><widget class="QPushButton" name="exitButton"><property name="text"><string>Exit</string></property></widget></item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Purchases Made</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item><widget class="QListWidget" name="purchasesList"/></item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
